@@ -582,10 +582,19 @@ body {
     background-color: rgb(49, 48, 48);
 }
 
-.footer-social-links > a {
+.footer-social-links  {
     margin-right: 35px;
     display: flex;
     justify-content: flex-end;
+    max-width: 502px;
+
+
+}
+
+
+.footer-social-links-im > a {
+    margin-right: 35px;
+    justify-content: space-around;
 
 
 }
