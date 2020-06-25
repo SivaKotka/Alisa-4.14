@@ -29,6 +29,7 @@ body {
 .feedback-contacts-wrapper {
     display: flex;
     flex-wrap: wrap;
+    flex-shrink: 1;
     justify-content: space-between;
     align-items: flex-start;
     max-width: 1250px;
@@ -102,7 +103,7 @@ body {
 .our-team-members-wrapper {
     margin-top: 40px;
     margin-bottom: 20px;
-
+    flex-shrink: 1;
 }
 
 .our-organisation-h {
@@ -181,7 +182,7 @@ body {
     margin-bottom: 60px;
     color: rgb(20, 20, 20);
     font-family: "OpenSans Regular", Helvetica, Arial, sans-serif;
-
+    flex-shrink: 1;
 }
 
 .more-button {
@@ -378,7 +379,6 @@ body {
     flex: 1 1 25%;
     max-width: 176px;
     height: auto;
-
 }
 
 .member-title  {
@@ -481,7 +481,7 @@ body {
     position: relative;
     display: flex;
     align-items: flex-end;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap;    
     padding-top: 92px;
     padding-bottom: 110px;
 }
@@ -496,20 +496,28 @@ body {
 }
 
 .feedback-text {
+    display: flex;
     max-width: 720px;
     margin-bottom: 50px;
+    flex-shrink: 1;
+
 
 }
 
 .feedback-line {
+    display: flex;
     margin-left: 0;
     margin-bottom: 75px;
+    flex-shrink: 1;
+
 }
 
 .feedback-form {
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
+    flex-shrink: 1;
+
 
 }
 
@@ -523,6 +531,8 @@ body {
     border-radius: 5px;
     background-color: rgb(229, 229, 229);  
     margin-bottom: 45px;
+    flex-shrink: 1;
+
 }
 
 .feedback-form > .name-input,
@@ -530,6 +540,9 @@ body {
     width: 339px;
     max-width: 339px;
     height: 69px;
+    display: flex;
+    flex-shrink: 1;
+
 }
 
 .feedback-form > .name-input {
@@ -597,10 +610,8 @@ body {
 
 .footer-wrapper {
     box-sizing: border-box;
-    display: flex;
     width: 100%;
-    max-width: 100%;
-    min-height: 100px;
+    height: 100px;
     color: rgb(24, 24, 24);
     align-items: center;
     justify-content: space-between; 
@@ -608,11 +619,11 @@ body {
 
 }
 .footer-text-wrapper {
-    max-width: 748px;    
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
+    max-width: 1250px;
     margin: 0 auto;
 }
 
@@ -634,4 +645,50 @@ display: flex;
 .footer-social-links-im > a {
     margin-right: 35px;
     justify-content: space-around;
+}
+
+@media screen and (max-width: 1200px) {
+
+.our-organisation,
+.services,
+.feature-products,
+.our-team,
+.subscribe{
+    padding-left: 10px;   
+         }
+
+    .feedback-contacts-wrapper {
+    display: flex;
+    flex-wrap: wrap;    
+    padding-left: 10px;   
+}
+
+.our-organisation-image {
+    width: 551px;
+    height: 356px;
+    box-shadow: 0 -10px 50px 0 rgb(150, 150, 150);
+}
+.members-wrapper {
+    flex-wrap: wrap;    
+
+}
+}
+
+@media screen and (max-width: 350px) {
+
+.our-organisation,
+.services,
+.feature-products,
+.our-team,
+.subscribe{
+    padding-left: 10px;   
+         }
+
+    .feedback-contacts-wrapper {
+    display: flex;
+    flex-wrap: wrap;    
+    padding-left: 10px;   
+
+}
+
 }
