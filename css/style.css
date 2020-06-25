@@ -66,22 +66,33 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    font-size: 11px;
+    font-size: 14px;
     color: rgb(224, 224, 224);
     font-weight: bold;
 }
 .main-menu > a {
-    display: inline-block;
-    padding: 42px 25px 30px;
+/*     display: inline-block;
+padding: 42px 25px 30px;
+color: rgb(224, 224, 224);
+text-transform: uppercase;
+text-decoration: none;
+font-family: "OpenSans Bold", Helvetica, Arial, sans-serif;
+ */
+    padding: 38px 30px 30px;    
     color: rgb(224, 224, 224);
     text-transform: uppercase;
     text-decoration: none;
-    font-family: "OpenSans Bold", Helvetica, Arial, sans-serif;
-
+    font-family: "OpenSans", Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    margin-right: 20px;
 
 }
 .main-menu > a:hover {
     background-color: rgb(255, 63, 64);
+    font-weight: bold;
 }
 
 .our-organisation {
@@ -108,15 +119,17 @@ body {
 
 .our-organisation-h {
     margin: 0;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 30px;
     font-family: "OpenSans ExtraBold", Helvetica, Arial, sans-serif;
+    line-height: 1.1em;
 }  
 
 .our-organisation-text {
     max-width: 520px;
+    margin-top: 30px;
     margin-bottom: 60px;
     color: rgb(73, 72, 72);
     font-family: "OpenSans Regular", Helvetica, Arial, sans-serif;
@@ -133,6 +146,8 @@ body {
     text-align: center;
     text-decoration: none;
     font-family: "OpenSans Bold", Helvetica, Arial, sans-serif;
+    margin-top: 10px;
+
 }
 
 .our-organisation-image {
@@ -616,6 +631,8 @@ body {
     align-items: center;
     justify-content: space-between; 
     background-color: rgb(49, 48, 48);
+    padding-top: 30px;
+
 
 }
 .footer-text-wrapper {
